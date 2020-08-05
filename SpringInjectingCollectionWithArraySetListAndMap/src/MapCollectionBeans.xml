@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans.xsd 
+    http://www.springframework.org/schema/context 
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean id="companyInfo" class="com.home.info.CompanyInfo">
+		<property name="empIdAndNameMap">
+		<map>
+		<entry key="1" value="Vivek Garg"></entry>
+		<entry key="2" value="Prabhat"></entry>
+		<entry key="3" value="Paras"></entry>
+		</map>
+		</property>
+
+		 <property name="stuMap">
+		 <map>
+		 <entry key="1" value-ref="student1"></entry>
+		 <entry key="2" value-ref="student2"></entry>
+		 <entry key="3" value-ref="student3"></entry>
+		 </map>
+		</property>
+	</bean>
+	
+	<bean id="student1" class="com.home.model.Student">
+	<property name="studentId" value="1111"></property>
+	<property name="studentName" value="Vivek Garg"></property>
+	<property name="email" value="vivekg@gmail.com"></property>
+	<property name="gender" value="Male"></property>
+	</bean>
+	
+	<bean id="student2" class="com.home.model.Student">
+	<property name="studentId" value="2222"></property>
+	<property name="studentName" value="Prabhat"></property>
+	<property name="email" value="prabhat@gmail.com"></property>
+	<property name="gender" value="Male"></property>
+	</bean>
+	
+	<bean id="student3" class="com.home.model.Student">
+	<property name="studentId" value="3333"></property>
+	<property name="studentName" value="Paras"></property>
+	<property name="email" value="Paras@gmail.com"></property>
+	<property name="gender" value="Male"></property>
+	</bean>
+</beans>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans.xsd 
+    http://www.springframework.org/schema/context 
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean id="orgInfo" class="com.home.info.OrgInfo">
+		<property name="namesArr">
+			<array>
+				<value>Vivek Garg</value>
+				<value>Prabhat</value>
+				<value>Paras</value>
+				<value>Prabhat</value>
+			</array>
+		</property>
+
+		<property name="empList">
+			<list>
+				<value>Shubham</value>
+				<value>Sameer</value>
+				<value>Raja</value>
+				<value>Shubham</value>
+			</list>
+		</property>
+
+		<property name="empIdsSet">
+			<set>
+				<value>1</value>
+				<value>2</value>
+				<value>3</value>
+				<value>2</value>
+			</set>
+		</property>
+	</bean>
+</beans>
